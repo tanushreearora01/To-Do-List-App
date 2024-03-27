@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E93BDB72BB3DE7200319B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E93BDB62BB3DE7200319B08 /* GoogleService-Info.plist */; };
+		6E93BDB92BB3DF1700319B08 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6E93BDB82BB3DF1700319B08 /* .gitignore */; };
 		6EFBEEFD2BB3D8CD007944A5 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */; };
 		6EFBEEFF2BB3D8CD007944A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */; };
 		6EFBEF012BB3D8CF007944A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFBEF002BB3D8CF007944A5 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E93BDB62BB3DE7200319B08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E93BDB82BB3DF1700319B08 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6EFBEEF92BB3D8CD007944A5 /* To-Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_AppApp.swift; sourceTree = "<group>"; };
 		6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,10 +55,12 @@
 		6EFBEEFB2BB3D8CD007944A5 /* To-Do List App */ = {
 			isa = PBXGroup;
 			children = (
+				6E93BDB62BB3DE7200319B08 /* GoogleService-Info.plist */,
 				6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */,
 				6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */,
 				6EFBEF002BB3D8CF007944A5 /* Assets.xcassets */,
 				6EFBEF022BB3D8CF007944A5 /* Preview Content */,
+				6E93BDB82BB3DF1700319B08 /* .gitignore */,
 			);
 			path = "To-Do List App";
 			sourceTree = "<group>";
@@ -128,7 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E93BDB92BB3DF1700319B08 /* .gitignore in Resources */,
 				6EFBEF042BB3D8CF007944A5 /* Preview Assets.xcassets in Resources */,
+				6E93BDB72BB3DE7200319B08 /* GoogleService-Info.plist in Resources */,
 				6EFBEF012BB3D8CF007944A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +286,12 @@
 				DEVELOPMENT_TEAM = K7DCNZ28TM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To-Do List ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,11 +316,12 @@
 				DEVELOPMENT_TEAM = K7DCNZ28TM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To-Do List ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
