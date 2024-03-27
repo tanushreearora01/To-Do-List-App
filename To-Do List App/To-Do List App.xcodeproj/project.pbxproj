@@ -39,6 +39,7 @@
 		6EFBEEF02BB3D8CD007944A5 = {
 			isa = PBXGroup;
 			children = (
+				6E93BDB62BB3DE7200319B08 /* GoogleService-Info.plist */,
 				6EFBEEFB2BB3D8CD007944A5 /* To-Do List App */,
 				6EFBEEFA2BB3D8CD007944A5 /* Products */,
 			);
@@ -55,7 +56,6 @@
 		6EFBEEFB2BB3D8CD007944A5 /* To-Do List App */ = {
 			isa = PBXGroup;
 			children = (
-				6E93BDB62BB3DE7200319B08 /* GoogleService-Info.plist */,
 				6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */,
 				6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */,
 				6EFBEF002BB3D8CF007944A5 /* Assets.xcassets */,
