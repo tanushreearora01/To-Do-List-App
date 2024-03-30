@@ -18,8 +18,12 @@ struct LoginView: View {
                 HeaderView(title: "To Do List", subtitle : "Get Things done", angle: 15, background: .pink)
                     .padding(.top, 50)
                 
+               
+                
                 // Login Form
                 Form {
+                   
+                    
                     TextField("Email Address", text: $viewmodel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocorrectionDisabled()
@@ -28,10 +32,17 @@ struct LoginView: View {
                     SecureField("Password", text: $viewmodel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
+                    // Error Message
+                     if !viewmodel.errorMessage.isEmpty {
+                         Text(viewmodel.errorMessage)
+                             .foregroundColor(.red)
+                     }
+                    
                     TLButton(title: "Log In", background: .blue) {
-                        // Attempt log in
+                        viewmodel.login()
                     }
                 }
+                
                 // New User?
                 VStack{
                     Text("New around here?")
