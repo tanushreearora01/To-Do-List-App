@@ -11,40 +11,31 @@ struct LoginView: View {
     @State var email = ""
     @State var password = ""
     var body: some View {
-        VStack{
-           // Header
-            HeaderView()
-            
-            // Login Form
-            Form {
-                TextField("Email Address", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle()  )
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
-                Button {
-                // Attempt Log In
-                } label : {
-                    
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.blue)
-                        Text("Login")
-                            .foregroundColor(Color.white)
-                            .bold()
-                    }
-                }
-            }
-            // New User?
+        NavigationView{
             VStack{
-                Text("New around here?")
-                Button("Create An Account"){
-                    //Show Registration
+               // Header
+                HeaderView(title: "To Do List", subtitle : "Get Things done", angle: 15, background: .pink)
+                
+                // Login Form
+                Form {
+                    TextField("Email Address", text: $email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
+                    TLButton(title: "Log In", background: .blue) {
+                        // Attempt log in
+                    } 
                 }
-            }
-            
-            Spacer()
-         }
+                // New User?
+                VStack{
+                    Text("New around here?")
+                    NavigationLink("Create An Account", destination: RegisterView())
+                }
+                
+                Spacer()
+             }
+        }
         
     }
 }

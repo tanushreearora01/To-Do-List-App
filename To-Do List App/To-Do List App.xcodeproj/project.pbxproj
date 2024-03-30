@@ -16,6 +16,8 @@
 		6E93BDCA2BB50FF600319B08 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6E93BDC92BB50FF600319B08 /* FirebaseFirestore */; };
 		6EAB1CF52BB621D10092A990 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CF42BB621D10092A990 /* LoginView.swift */; };
 		6EAB1CF72BB638AD0092A990 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CF62BB638AD0092A990 /* HeaderView.swift */; };
+		6EAB1CF92BB6677F0092A990 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CF82BB6677F0092A990 /* RegisterView.swift */; };
+		6EAB1CFB2BB885ED0092A990 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CFA2BB885ED0092A990 /* TLButton.swift */; };
 		6EFBEEFD2BB3D8CD007944A5 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */; };
 		6EFBEEFF2BB3D8CD007944A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */; };
 		6EFBEF012BB3D8CF007944A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFBEF002BB3D8CF007944A5 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		6E93BDBE2BB4838400319B08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "To-Do List App/Other/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6EAB1CF42BB621D10092A990 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6EAB1CF62BB638AD0092A990 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6EAB1CF82BB6677F0092A990 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		6EAB1CFA2BB885ED0092A990 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		6EFBEEF92BB3D8CD007944A5 /* To-Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_AppApp.swift; sourceTree = "<group>"; };
 		6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */,
 				6EAB1CF42BB621D10092A990 /* LoginView.swift */,
 				6EAB1CF62BB638AD0092A990 /* HeaderView.swift */,
+				6EAB1CF82BB6677F0092A990 /* RegisterView.swift */,
+				6EAB1CFA2BB885ED0092A990 /* TLButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EAB1CF52BB621D10092A990 /* LoginView.swift in Sources */,
+				6EAB1CFB2BB885ED0092A990 /* TLButton.swift in Sources */,
+				6EAB1CF92BB6677F0092A990 /* RegisterView.swift in Sources */,
 				6EFBEEFF2BB3D8CD007944A5 /* ContentView.swift in Sources */,
 				6EFBEEFD2BB3D8CD007944A5 /* To_Do_List_AppApp.swift in Sources */,
 				6EAB1CF72BB638AD0092A990 /* HeaderView.swift in Sources */,
