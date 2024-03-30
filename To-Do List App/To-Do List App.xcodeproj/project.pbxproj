@@ -19,6 +19,11 @@
 		6EAB1CF92BB6677F0092A990 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CF82BB6677F0092A990 /* RegisterView.swift */; };
 		6EAB1CFB2BB885ED0092A990 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CFA2BB885ED0092A990 /* TLButton.swift */; };
 		6EAB1CFD2BB8A03C0092A990 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CFC2BB8A03B0092A990 /* LoginViewModel.swift */; };
+		6EAB1CFF2BB8AA760092A990 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1CFE2BB8AA760092A990 /* RegisterViewModel.swift */; };
+		6EAB1D032BB8B39D0092A990 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1D022BB8B39D0092A990 /* User.swift */; };
+		6EAB1D052BB8B5E10092A990 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1D042BB8B5E10092A990 /* Extensions.swift */; };
+		6EAB1D072BB8B8B00092A990 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1D062BB8B8B00092A990 /* ContentViewModel.swift */; };
+		6EAB1D092BB8BAE60092A990 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB1D082BB8BAE60092A990 /* ToDoListView.swift */; };
 		6EFBEEFD2BB3D8CD007944A5 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */; };
 		6EFBEEFF2BB3D8CD007944A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */; };
 		6EFBEF012BB3D8CF007944A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFBEF002BB3D8CF007944A5 /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 		6EAB1CF82BB6677F0092A990 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		6EAB1CFA2BB885ED0092A990 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		6EAB1CFC2BB8A03B0092A990 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6EAB1CFE2BB8AA760092A990 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		6EAB1D022BB8B39D0092A990 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6EAB1D042BB8B5E10092A990 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6EAB1D062BB8B8B00092A990 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		6EAB1D082BB8BAE60092A990 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		6EFBEEF92BB3D8CD007944A5 /* To-Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_AppApp.swift; sourceTree = "<group>"; };
 		6EFBEEFE2BB3D8CD007944A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +81,7 @@
 				6EAB1CF62BB638AD0092A990 /* HeaderView.swift */,
 				6EAB1CF82BB6677F0092A990 /* RegisterView.swift */,
 				6EAB1CFA2BB885ED0092A990 /* TLButton.swift */,
+				6EAB1D082BB8BAE60092A990 /* ToDoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -79,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				6EAB1CFC2BB8A03B0092A990 /* LoginViewModel.swift */,
+				6EAB1CFE2BB8AA760092A990 /* RegisterViewModel.swift */,
+				6EAB1D062BB8B8B00092A990 /* ContentViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -86,6 +99,7 @@
 		6E93BDCD2BB5106400319B08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6EAB1D022BB8B39D0092A990 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +111,7 @@
 				6EFBEF002BB3D8CF007944A5 /* Assets.xcassets */,
 				6E93BDBE2BB4838400319B08 /* GoogleService-Info.plist */,
 				6EFBEEFC2BB3D8CD007944A5 /* To_Do_List_AppApp.swift */,
+				6EAB1D042BB8B5E10092A990 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -223,7 +238,12 @@
 				6EAB1CF52BB621D10092A990 /* LoginView.swift in Sources */,
 				6EAB1CFB2BB885ED0092A990 /* TLButton.swift in Sources */,
 				6EAB1CF92BB6677F0092A990 /* RegisterView.swift in Sources */,
+				6EAB1CFF2BB8AA760092A990 /* RegisterViewModel.swift in Sources */,
 				6EFBEEFF2BB3D8CD007944A5 /* ContentView.swift in Sources */,
+				6EAB1D052BB8B5E10092A990 /* Extensions.swift in Sources */,
+				6EAB1D092BB8BAE60092A990 /* ToDoListView.swift in Sources */,
+				6EAB1D032BB8B39D0092A990 /* User.swift in Sources */,
+				6EAB1D072BB8B8B00092A990 /* ContentViewModel.swift in Sources */,
 				6EFBEEFD2BB3D8CD007944A5 /* To_Do_List_AppApp.swift in Sources */,
 				6EAB1CF72BB638AD0092A990 /* HeaderView.swift in Sources */,
 				6EAB1CFD2BB8A03C0092A990 /* LoginViewModel.swift in Sources */,
