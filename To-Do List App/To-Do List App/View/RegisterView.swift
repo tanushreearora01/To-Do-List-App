@@ -17,6 +17,7 @@ struct RegisterView: View {
             // Header
             HeaderView(title: "Register", subtitle: "Start organizing todos", angle: -15, background: .orange)
                 .padding(.top, 50)
+                .offset(y:-30)
             
             Spacer()
             
@@ -37,7 +38,7 @@ struct RegisterView: View {
                     // Attempt Registration
                 }
             }
-            .offset(y:-50) 
+            .offset(y:-50)
         }
     }
 }
