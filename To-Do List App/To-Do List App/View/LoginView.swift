@@ -15,17 +15,21 @@ struct LoginView: View {
             VStack{
                // Header
                 HeaderView(title: "To Do List", subtitle : "Get Things done", angle: 15, background: .pink)
+                    .padding(.top, 50)
                 
                 // Login Form
                 Form {
                     TextField("Email Address", text: $email)
                         .textFieldStyle(DefaultTextFieldStyle())
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
+                    
                     SecureField("Password", text: $password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
                     TLButton(title: "Log In", background: .blue) {
                         // Attempt log in
-                    } 
+                    }
                 }
                 // New User?
                 VStack{

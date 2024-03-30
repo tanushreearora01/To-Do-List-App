@@ -23,16 +23,21 @@ struct RegisterView: View {
             Form {
                 TextField("Full Name", text: $name )
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                
                 TextField("Email", text: $email )
                     .textFieldStyle(DefaultTextFieldStyle())
-                TextField("Password", text: $password )
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                
+                SecureField("Password", text: $password )
                     .textFieldStyle(DefaultTextFieldStyle())
                 
                 TLButton(title: "Create Account", background: .green) {
                     // Attempt Registration
                 }
             }
-            .offset(y:-50)
+            .offset(y:-50) 
         }
     }
 }
