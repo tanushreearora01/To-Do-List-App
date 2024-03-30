@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewmodel = ContentViewModel()
     var body: some View {
-         @StateObject var viewmodel = ContentViewModel()
-        if viewmodel.isSignedIn, viewmodel.currentUserId.isEmpty {
+        
+        if viewmodel.isSignedIn, !viewmodel.currentUserId.isEmpty {
+            // signed in
             ToDoListView()
+        } else {
+            LoginView()
         }
         
     }

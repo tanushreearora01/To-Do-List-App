@@ -33,8 +33,14 @@ struct RegisterView: View {
                 SecureField("Password", text: $viewmodel.password )
                     .textFieldStyle(DefaultTextFieldStyle())
                 
+                // Error Message
+                 if !viewmodel.errorMessage.isEmpty {
+                     Text(viewmodel.errorMessage)
+                         .foregroundColor(.red)
+                 }
+                
                 TLButton(title: "Create Account", background: .green) {
-                    // Attempt Registration
+                    viewmodel.register()
                 }
             }
             .offset(y:-50)

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToDoListView: View {
     var body: some View {
-        Text("Welcome to your account")
+        Text("Welcome to your account!")
     }
 }
 
