@@ -13,11 +13,25 @@ struct ContentView: View {
         
         if viewmodel.isSignedIn, !viewmodel.currentUserId.isEmpty {
             // signed in
-            ToDoListView()
+            accountView
         } else {
             LoginView()
         }
-        
+    }
+    
+    @ViewBuilder
+    var accountView: some View {
+        TabView {
+            ToDoListView(userId : viewmodel.currentUserId)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                
+            ProfileView()
+                    .tabItem {
+                        Label("Profile", systemImage: "person.circle")
+                    }
+        }
     }
 }
 
