@@ -27,11 +27,8 @@ struct ToDoListView: View {
                 List(items) {
                     item in ToDoListItemView (item: item)
                         .swipeActions{
-                            Button {
-                                // Delete functionality
-                            } label: {
-                                Text("Delete")
-                                    .foregroundStyle(Color.red)
+                            Button("Delete"){
+                                viewModel.delete(id: item.id)
                             }
                         }
                 }.listStyle(PlainListStyle())
@@ -39,8 +36,7 @@ struct ToDoListView: View {
             .navigationTitle("To Do List")
             .toolbar{
                 Button{
-                    // Action
-                    viewModel.showingNewItemView = true 
+                    viewModel.showingNewItemView = true
                 } label: {
                     Image(systemName: "plus")
                     
